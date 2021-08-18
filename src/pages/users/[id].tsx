@@ -17,6 +17,11 @@ const UserDetailPage = () => {
         <div>
           <h3>Name: {user.name}</h3>
           <h3>Email: {user.email}</h3>
+
+          <p>
+            Address: {user.address.street}, {user.address.suite},{" "}
+            {user.address.city} {user.address.zipcode}
+          </p>
         </div>
       )}
 
