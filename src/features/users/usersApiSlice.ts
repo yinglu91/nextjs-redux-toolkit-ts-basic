@@ -27,8 +27,11 @@ export const usersApiSlice = createApi({
       getUsers: builder.query<User[], void>({
         query: () => `/users`,
       }),
+      getUser: builder.query<User, number>({
+        query: (userId) => `/users/${userId}`,
+      }),
     }
   },
 })
 
-export const { useGetUsersQuery } = usersApiSlice
+export const { useGetUsersQuery, useGetUserQuery } = usersApiSlice
