@@ -38,3 +38,5 @@ const IndexPage: FC = () => {
 }
 
 export default IndexPage
+
+// http://localhost:3000/
